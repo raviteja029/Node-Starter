@@ -1,97 +1,150 @@
 <html>
-<style>
-
-#headerc1{
-  height: auto;
-  right: 90%;
-   width: 15%;
-           }
-
-#headerlock{
-         position: fixed;
-         top: 28px;
-         right: 200;
-         width: 30px;
-         height: 35px;     }
-
-#headerpara{
-    position: fixed;
-    top: 22px;
-    right: 115;
-    width: 40px;
-  height: 30px;       }
-
-#bodyimage{
-    position: relative;
-    top: 40px;
-    width: 100%;
-
-
-                        }
-
-</style>
-<link type="image/gif/png" href="content/title.png">
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
 <title>Capital One</title>
+</head>
+<link type="image/gif/png" href="content/title.png">
 
-<a  href="https://www.capitalone.com" target="_blank" title="Home Page">
-  <img src="content/capitalone.png" id="headerc1"></a>
-
-<a href="content/message.png"  >
-  <img src="content/lock.png" id="headerlock" >
-   </a>
-
-  <div id="bodyimage" > This page is secure. </div>
-
-<a><img src="content/cards.png" id="bodyimage" ></a>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
 <body>
 
-<form>
-First name<br><input type="text" name="FirstName" >
-<br>
-Last name<br><input type="text" name="LastName" >
-<br>
-STREET ADDRESS REQUIRED(NO P.O. BOXES)<br><input type="text" name="Address" >
-<br>
-STREET ADDRESS LINE 2<br><input type="text" name="Address1" >
-<br>
-CITY<br><input type="text" name="City" >
-<br>
-ZIP CODE<br><input type="text" name="Zip" >
-<br>
-DATE OF BIRTH<br><input type="date" name="date" >
-<br>
-SOCIAL SECURITY NUMBER<br><input type="text" name="Zip" value=XXXXXXXXX >
-<br>
-<p>------------</p>
-<br>
+  <div id="wrapper">
+<!-- Start of header -->
+     <div class="header">
+       <!-- Capitalone image -->
+       <div class="capitalone">
+              <a href="https://www.capitalone.com" target="_blank"> <img src="images/capitalone.png" class="headerc1" ></a>
+       </div>
+       <!-- Lock image -->
+       <div class="lock">
+              <a> <img src="images/lock.png" class="lock" id="myBtn"></a>
+              <div class="locktxt">This page is secure.</div>
+       </div>
 
-<div>What card benefit is most important to you?</div><br>
+       <div id="myModal" class="modal">
+         <div class="modal-content">
+           <span class="close">&times;</span>
+           <h2 align="center ">Page is Secure</h2>
+           <p>This site uses Secure Sockets Layer (SSL) encryption for all customer data and has been authenticated by VeriSign.</p>
+           <p>Any information you provide will remain safe, secure, and confidential.</p>
+           <p>Review our privacy policy to learn how we protect your personal information.</p>
+         </div>
+       </div>
+       <!--@@@@@@@@@@@@  This is model end @@@@@@@@@@@@ -->
 
-<input type="radio" name="Zip"> Travel rewards
-<input type="radio" name="Zip"> Cash back
-<input type="radio" name="Zip"> Low interest
-<input type="radio" name="Zip"> Not sure yet<br>
-<br>
-<br>
-<div>How do you rate your credit level?</div> <div>Learn about credit levels</div>
-<input type="radio" name="Zip"> Excellent
-<input type="radio" name="Zip"> Average
-<input type="radio" name="Zip"> Rebuilding
-<br>
-<br>
-<br>
-<input type="checkbox" name="Zip"> I understand that this is not a credit card application Required
-<br>
-<input align="center" type="submit" value="See Your Card Offers">
 
+        <div class="picture" >
+              <img src="images/cards.png" class="cards1">
+        </div>
+    </div>
+<!-- End of header -->
+
+<!-- Content start -->
+    <div class="content">
+       <div class="user-details">
+         <div class="row1">
+            <div id="firstname" class="firstname">
+              First Name <br><input type="text" >
+            </div>
+            <div id="lastname" class="lastname">
+              Last Name <br><input type="text" >
+            </div>
+         <div class="row2">
+             <div id="streetaddress" class="streetaddress">
+               STREET ADDRESS REQUIRED(NO P.O. BOXES) <br><input type="text" >
+             </div>
+             <div id="streetaddresslane" class="streetaddresslane">
+             </div>
+         <div class="row3">
+              <div id="city" class="city">
+              </div>
+              <div id="state" class="state">
+              </div>
+              <div id="zipcode" class="zipcode">
+              </div>
+          <div class="row4">
+                  <div id="dob" class="dob">
+                  </div>
+                  <div id="age-model" class="age-model">
+                  </div>
+                  <div id="ssn" class="ssn">
+                  </div>
+           </div>
+           </div>
+           </div>
+           </div>
+         </div>
+       </div>
+<!--Start Check box -->
+       <div class="check-box">
+            <div class="cardbenefit"> <p> What card benefit is most important to you?</p>
+            </div>
+            <div class="radio-1">
+                <div class="radio1" type="radio" >
+                  <p>Travel rewards</p>
+                </div>
+                <div class="radio2" type="radio" >
+                </div>
+                <div class="radio3" type="radio" >
+                </div>
+                <div class="radio4" type="radio" >
+                </div>
+            </div>
+            <div class="creditlevel"><p>How do you rate your credit level?</p>
+            </div>
+            <div class="radio-2">
+                <div class="radio1" type="radio" >
+                  <p>Excellent</p>
+                </div>
+                <div class="radio2" type="radio" >
+                </div>
+                <div class="radio3" type="radio" >
+                </div>
+              </div>
+            <div class="checkbox"  >
+                  <input type="checkbox" > I understand that this is not a credit card application Required
+                </div>
+            <div class="submit">
+              <input type="button"  value="See Your Card Offers">
+                </div>
+       </div>
+
+
+<!-- Content End -->
+      <div class="footer">
+      </div>
+    </div>
 </body>
 
 
+
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 </html>
