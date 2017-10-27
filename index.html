@@ -1,6 +1,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+
 <title>Capital One</title>
 </head>
 <link type="image/gif/png" href="content/title.png">
@@ -43,30 +44,37 @@
        <div class="user-details">
          <div class="row1">
             <div id="firstname" class="firstname">
-              First Name <br><input type="text" >
+              First Name <br><input type="text" style="height: 30px; width: 300px;">
             </div>
             <div id="lastname" class="lastname">
-              Last Name <br><input type="text" >
+              Last Name <br><input type="text" style="height: 30px; width: 300px;">
             </div>
          <div class="row2">
              <div id="streetaddress" class="streetaddress">
-               STREET ADDRESS REQUIRED(NO P.O. BOXES) <br><input type="text" >
+               STREET ADDRESS (NO P.O. BOXES) <br><input type="text" style="height: 30px; width: 300px;" >
              </div>
              <div id="streetaddresslane" class="streetaddresslane">
+               STREET ADDRESS LINE 2 <br><input type="text" style="height: 30px; width: 300px;">
              </div>
          <div class="row3">
               <div id="city" class="city">
+                CITY <br> <input type="text"style="height: 30px; width: 300px;">
               </div>
               <div id="state" class="state">
-              </div>
+              State <br> <input type="text" style="height: 30px; width: 50px;">
+            </div>
               <div id="zipcode" class="zipcode">
+                  Zip Code <br> <input type="number" style="height: 30px; width: 300px;">
               </div>
           <div class="row4">
                   <div id="dob" class="dob">
+                    Date Of Birth <br> <input type="date" style="height: 30px; width: 150px;">
                   </div>
-                  <div id="age-model" class="age-model">
+                  <div id="age-model" class="age-model"style="height: 30px; width: 300px;">
+                    Are you under 21 years of age?
                   </div>
                   <div id="ssn" class="ssn">
+                    SOCIAL SECURITY NUMBER <br> <input type="number" style="height: 30px; width: 300px;">
                   </div>
            </div>
            </div>
@@ -74,77 +82,63 @@
            </div>
          </div>
        </div>
+        <div class="blueHorizontalRule" style="height:1px; background-color:#E1E0E2; padding:0 10px; margin:30px 30px 30px 30px;"></div>
 <!--Start Check box -->
        <div class="check-box">
             <div class="cardbenefit"> <p> What card benefit is most important to you?</p>
             </div>
             <div class="radio-1">
                 <div class="radio1" type="radio" >
-                  <p>Travel rewards</p>
+                  <input type="radio"> Travel rewards
                 </div>
                 <div class="radio2" type="radio" >
+                    <input type="radio"> Cash back
                 </div>
                 <div class="radio3" type="radio" >
+                    <input type="radio"> Low interest
                 </div>
                 <div class="radio4" type="radio" >
+                    <input type="radio"> Not sure yet
                 </div>
             </div>
-            <div class="creditlevel"><p>How do you rate your credit level?</p>
+            <div class="creditlevel"> <p>How do you rate your credit level?</p>
             </div>
-            <div class="radio-2">
-                <div class="radio1" type="radio" >
-                  <p>Excellent</p>
+            <div class="radio-1">
+                <div class="radio5" type="radio" >
+                  <input type="radio"> Excellent
                 </div>
-                <div class="radio2" type="radio" >
+                <div class="radio6" type="radio" >
+                  <input type="radio"> Average
                 </div>
-                <div class="radio3" type="radio" >
+                <div class="radio7" type="radio" >
+                  <input type="radio"> Rebuilding
                 </div>
               </div>
+
+
+            <div class="blueHorizontalRule" style="height:1px; background-color:#E1E0E2; padding:0 10px; margin:15px 0px 25px 0px;"></div>
             <div class="checkbox"  >
                   <input type="checkbox" > I understand that this is not a credit card application Required
                 </div>
             <div class="submit">
-              <input type="button"  value="See Your Card Offers">
+              <a href="#" class="button1">See Your Card Offers</a>
                 </div>
        </div>
 
 
+
 <!-- Content End -->
-      <div class="footer">
-      </div>
+
+
+
     </div>
+<script type="text/javascript" src="JS/all.js"></script>
 </body>
 
+<footer>
+  <div class="footer">
+    <img src="images/footer.png" >
+  </div>
+</footer>
 
-
-
-
-
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
 </html>
